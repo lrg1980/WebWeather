@@ -12,6 +12,7 @@ const Header = (props) => {
           </div>
      );
 };
+
 Header.propTypes = {
      titulo: PropTypes.string.isRequired
 }
