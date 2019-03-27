@@ -13,7 +13,10 @@ class Formulario extends Component {
                ciudad: this.ciudadRef.current.value,
                pais: this.paisRef.current.value
           }
-          console.log(respuesta);
+          //console.log(respuesta);
+
+          // enviar por props
+          this.props.datosConsulta(respuesta);
      }
 
 
@@ -40,7 +43,7 @@ class Formulario extends Component {
                                         </select>
                                         <label htmlFor="pais">Pais: </label>
                                    </div>
-                                   <div className="input-field col s12 m6 l4 offset-2 buscador text-center">
+                                   <div className="input-field col s12 m6 l4 offset-m3 buscador">
                                         <input type="submit" className="waves-effect waves-light btn-large yellow accent-4 text-center" value="Buscar" />
                                    </div>
                               </form>
